@@ -3,9 +3,9 @@ import { Building2, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import BorderGlow from "./ui/BorderGlow";
 
-import image1 from "../../../images/image_1.jpg";
-import image2 from "../../../images/image_2.jpg";
-import image3 from "../../../images/image_3.jpg";
+const image1 = "/images/image_1.jpg";
+const image2 = "/images/image_2.jpg";
+const image3 = "/images/image_3.jpg";
 
 const experiences = [
   {
