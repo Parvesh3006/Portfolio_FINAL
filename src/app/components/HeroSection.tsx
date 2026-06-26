@@ -71,7 +71,7 @@ export default function HeroSection() {
       ))}
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto px-6 py-14 sm:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT CONTENT */}
@@ -99,7 +99,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight"
+              className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight"
             >
               PARVESH
               <br />
@@ -111,7 +111,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl text-[#9ca3af] mb-6 min-h-[32px]"
+              className="text-lg sm:text-xl text-[#9ca3af] mb-6 min-h-[28px]"
             >
               <motion.span
                 key={currentRole}

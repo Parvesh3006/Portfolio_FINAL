@@ -19,7 +19,7 @@ export default function AboutSection() {
   return (
     <section
   id="about"
-  className="relative py-32 overflow-hidden bg-[#050505]"
+  className="relative py-24 sm:py-32 overflow-hidden bg-[#050505]"
 >
       {/* Background */}
       <div className="absolute inset-0 opacity-5">
@@ -38,7 +38,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-5xl font-bold text-[#F5F5F5] mb-4">
+          <h2 className="font-heading text-3xl sm:text-5xl font-bold text-[#F5F5F5] mb-4">
             About <span className="text-[#00FF99]">Me</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FF99] to-[#00D9FF] mx-auto rounded-full" />
@@ -46,14 +46,14 @@ export default function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left - Visual */}
-<motion.div
-  initial={{ opacity: 0, x: -50 }}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
   whileInView={{ opacity: 1, x: 0 }}
   viewport={{ once: true }}
   className="relative"
 >
-  <motion.div
-    className="relative w-[420px] h-[420px] mx-auto"
+<motion.div
+  className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] mx-auto"
     animate={{
       y: [0, -12, 0],
     }}

@@ -34,7 +34,7 @@ const achievements = [
 
 export default function AchievementsSection() {
   return (
-    <section className="relative py-32 overflow-hidden bg-[#050505]">
+<section className="relative py-24 sm:py-32 overflow-hidden bg-[#050505]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <motion.div
@@ -57,7 +57,7 @@ export default function AchievementsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-5xl font-bold text-[#F5F5F5] mb-4">
+<h2 className="font-heading text-3xl sm:text-5xl font-bold text-[#F5F5F5] mb-4">
             Achievements & <span className="text-[#00FF99]">Recognition</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FF99] to-[#00D9FF] mx-auto rounded-full" />
@@ -77,7 +77,7 @@ export default function AchievementsSection() {
                 className="group relative"
               >
                 {/* Card */}
-                <div className="relative p-8 rounded-2xl bg-gradient-to-br from-[#0F1115] to-[#0F1115]/50 border border-[#00FF99]/20 backdrop-blur-sm overflow-hidden">
+<div className="relative p-5 sm:p-8 rounded-2xl bg-gradient-to-br from-[#0F1115] to-[#0F1115]/50 border border-[#00FF99]/20 backdrop-blur-sm overflow-hidden">
                   {/* Metallic Shine */}
                   <motion.div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100"
@@ -129,7 +129,7 @@ export default function AchievementsSection() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl font-heading font-bold text-[#F5F5F5] mb-3">
+<h3 className="text-xl sm:text-2xl font-heading font-bold text-[#F5F5F5] mb-3">
                       {achievement.title}
                     </h3>
 

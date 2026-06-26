@@ -145,7 +145,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="relative py-32">
+<section id="projects" className="relative py-24 sm:py-32">
 
       {/* Background */}
       <div className="absolute inset-0 opacity-5">
@@ -167,7 +167,7 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-[#F5F5F5] mb-4">
+<h2 className="text-3xl sm:text-5xl font-bold text-[#F5F5F5] mb-4">
             Featured <span className="text-[#00FF99]">Projects</span>
           </h2>
 
@@ -195,7 +195,7 @@ export default function ProjectsSection() {
               {/* Card */}
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="relative p-8 rounded-3xl 
+className="relative p-5 sm:p-8 rounded-3xl
                 bg-gradient-to-br from-[#0F1115] to-black 
                 border border-[#00FF99]/20 
                 overflow-hidden backdrop-blur-sm"
@@ -247,7 +247,7 @@ export default function ProjectsSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-white mb-4">
+<h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
                     {project.title}
                   </h3>
 

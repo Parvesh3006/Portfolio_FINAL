@@ -168,7 +168,7 @@ export default function ExperienceSection() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   return (
-    <section id="experience" className="relative py-32">
+<section id="experience" className="relative py-24 sm:py-32">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <motion.div
@@ -192,16 +192,16 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-5xl font-bold text-[#F5F5F5] mb-4">
+<h2 className="font-heading text-3xl sm:text-5xl font-bold text-[#F5F5F5] mb-4">
             Professional <span className="text-[#00FF99]">Experience</span>
           </h2>
 
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FF99] to-[#00D9FF] mx-auto rounded-full" />
         </motion.div>
 
-        <div className="max-w-4xl mx-auto relative">
+        <div className="max-w-4xl mx-auto relative px-0 sm:px-0">
           {/* Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#00FF99] via-[#00D9FF] to-[#00FF99]">
+          <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#00FF99] via-[#00D9FF] to-[#00FF99]">
             <motion.div
               className="absolute w-2 h-2 bg-[#00FF99] rounded-full left-1/2 -translate-x-1/2"
               animate={{ y: [0, "100%"] }}
@@ -213,7 +213,7 @@ export default function ExperienceSection() {
             />
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-8 sm:space-y-12">
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
@@ -221,10 +221,10 @@ export default function ExperienceSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="relative pl-24"
+className="relative pl-10 sm:pl-16 lg:pl-24"
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-6 top-6 w-5 h-5 bg-[#050505] border-2 border-[#00FF99] rounded-full">
+                <div className="absolute left-3 sm:left-6 top-6 w-5 h-5 bg-[#050505] border-2 border-[#00FF99] rounded-full">
                   <motion.div
                     className="absolute inset-0 bg-[#00FF99] rounded-full"
                     animate={{ scale: [0, 1.5], opacity: [1, 0] }}
@@ -234,7 +234,7 @@ export default function ExperienceSection() {
 
                 {/* Card */}
                 <motion.div
-                  className="group relative p-8 rounded-2xl bg-gradient-to-br from-[#0F1115] to-[#0F1115]/50 border border-[#00FF99]/20 backdrop-blur-sm cursor-pointer"
+                  className="group relative p-5 sm:p-8 rounded-2xl bg-gradient-to-br from-[#0F1115] to-[#0F1115]/50 border border-[#00FF99]/20 backdrop-blur-sm cursor-pointer"
                   whileHover={{ scale: 1.02, y: -5 }}
                   onClick={() =>
                     setExpandedIndex(

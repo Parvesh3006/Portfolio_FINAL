@@ -90,7 +90,7 @@ const techCategories = [
 
 export default function TechStack() {
   return (
-    <section className="relative py-32 overflow-hidden bg-gradient-to-b from-[#050505] via-[#0F1115] to-[#050505]">
+<section className="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-[#050505] via-[#0F1115] to-[#050505]">
       {/* Neural Network Background */}
       <div className="absolute inset-0 opacity-5">
         {[...Array(50)].map((_, i) => {
@@ -128,7 +128,7 @@ export default function TechStack() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-5xl font-bold text-[#F5F5F5] mb-4">
+<h2 className="font-heading text-3xl sm:text-5xl font-bold text-[#F5F5F5] mb-4">
             Tech <span className="text-[#00FF99]">Arsenal</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#00FF99] to-[#00D9FF] mx-auto rounded-full" />
@@ -152,7 +152,7 @@ export default function TechStack() {
                 className="group relative"
               >
                 {/* Card */}
-<div className="relative p-6 rounded-2xl bg-gradient-to-br from-[#0F1115] to-[#0F1115]/50 border border-[#00FF99]/20 backdrop-blur-sm">                  {/* Animated Border */}
+<div className="relative p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-[#0F1115] to-[#0F1115]/50 border border-[#00FF99]/20 backdrop-blur-sm">
                   <motion.div
                     className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"
                     style={{
@@ -182,7 +182,7 @@ export default function TechStack() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl font-heading font-bold text-[#F5F5F5] mb-4">
+<h3 className="text-lg sm:text-xl font-heading font-bold text-[#F5F5F5] mb-4">
                       {category.name}
                     </h3>
 

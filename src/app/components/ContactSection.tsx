@@ -273,7 +273,7 @@ const [errorMessage, setErrorMessage] = useState("");
 
             {/* Resume Download */}
             <a
-  href="/resume.pdf"
+  href="/Resume_Final.pdf"
   download="Parvesh_Shanmugam_Resume.pdf"
 >
   <motion.button

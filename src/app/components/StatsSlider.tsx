@@ -15,7 +15,7 @@ export default function StatsSlider() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-[#050505]">
+<section className="relative py-20 sm:py-24 overflow-hidden bg-[#050505]">
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#00FF99]/5 to-transparent" />
 
@@ -52,10 +52,9 @@ export default function StatsSlider() {
             <div className="absolute inset-0 rounded-[32px] bg-gradient-to-r from-[#00FF99]/20 via-[#00D9FF]/20 to-[#00FF99]/20 blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
             {/* Card */}
-            <div className="relative flex items-center gap-8 px-12 py-7 rounded-[32px] border border-[#00FF99]/20 bg-[#0F1115]/85 backdrop-blur-xl hover:border-[#00FF99]/50 transition-all duration-300">
-              
+            <div className="relative flex items-center gap-6 px-6 sm:px-12 py-6 sm:py-7 rounded-[32px] border border-[#00FF99]/20 bg-[#0F1115]/85 backdrop-blur-xl hover:border-[#00FF99]/50 transition-all duration-300">
               {/* Number */}
-              <div className="text-6xl font-black bg-gradient-to-r from-[#00FF99] to-[#00D9FF] bg-clip-text text-transparent whitespace-nowrap">
+              <div className="text-4xl sm:text-6xl font-black bg-gradient-to-r from-[#00FF99] to-[#00D9FF] bg-clip-text text-transparent whitespace-nowrap">
                 {stat.number}
               </div>
 
